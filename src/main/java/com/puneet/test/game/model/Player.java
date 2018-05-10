@@ -11,9 +11,9 @@ import lombok.Data;
 @Builder(toBuilder = true)
 public class Player {
 	private static final int PITS_PER_PLAYER = 6;
-	private final List<Pit> pits;
-	private final Kalaha kalaha;
 	private final String name;
+	private final Kalaha kalaha;
+	private final List<Pit> pits;
 
 	public static Player initialize(String name) {
 		return Player.builder()
